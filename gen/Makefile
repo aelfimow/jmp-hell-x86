@@ -25,7 +25,7 @@ link:
 	$(CXX) generate.o $(CPPASM_OBJ) -o generate.exe $(CXXFLAGS)
 
 generate:
-	./generate.exe > result/jmp_func.S
+	./generate.exe > ../src/jmp_func.S
 
 check:
 	$(AS) result/jmp_func.S ${ASFLAGS64} -o jmp_func.o
