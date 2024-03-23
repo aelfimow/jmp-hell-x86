@@ -50,26 +50,54 @@ try
         jmp_hell_100000
     };
 
-    std::valarray<uint64_t> diffs(all_functions.size());
-    size_t cnt = 0U;
+    std::valarray<uint64_t> diff_min(all_functions.size());
+    std::valarray<uint64_t> diff_max(all_functions.size());
 
-    uint64_t T0 = jmp_hell_10();
-
-    for (auto function: all_functions)
+    // First run to initialize diff_min and diff_max
     {
-        uint64_t const T1 = function();
+        size_t cnt = 0U;
 
-        uint64_t const diff = (T1 - T0);
+        uint64_t T0 = jmp_hell_10();
 
-        diffs[cnt] = diff;
-        ++cnt;
+        for (auto function: all_functions)
+        {
+            uint64_t const T1 = function();
 
-        T0 = T1;
+            uint64_t const diff = (T1 - T0);
+
+            diff_min[cnt] = diff;
+            diff_max[cnt] = diff;
+
+            ++cnt;
+
+            T0 = T1;
+        }
     }
 
-    for (uint64_t diff: diffs)
+    for (size_t step = 0U; step < 10000U; ++step)
     {
-        std::cout << diff << std::endl;
+        size_t cnt = 0U;
+
+        uint64_t T0 = jmp_hell_10();
+
+        for (auto function: all_functions)
+        {
+            uint64_t const T1 = function();
+
+            uint64_t const diff = (T1 - T0);
+
+            diff_min[cnt] = std::min(diff_min[cnt], diff);
+            diff_max[cnt] = std::max(diff_max[cnt], diff);
+
+            ++cnt;
+
+            T0 = T1;
+        }
+    }
+
+    for (size_t i = 0U; i < diff_min.size(); ++i)
+    {
+        std::cout << diff_min[i] << " ... " << diff_max[i] << std::endl;
     }
 
     return EXIT_SUCCESS;
