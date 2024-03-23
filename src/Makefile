@@ -15,7 +15,7 @@ all: compile link
 
 compile:
 	$(CXX) -c main.cpp -o main.o ${CXXFLAGS}
-	$(AS) jmp_hell.S ${ASFLAGS64} -o jmp_hell.o
+	$(AS) jmp_func.S ${ASFLAGS64} -o jmp_func.o
 
 link:
-	$(CXX) main.o jmp_hell.o -o jmp_hell.exe ${CXXFLAGS}
+	$(CXX) main.o jmp_func.o -o jmp_hell.exe ${CXXFLAGS}
