@@ -75,6 +75,8 @@ static void generate_func(size_t max_labels)
     func_name.append("_");
     func_name.append(std::to_string(max_labels));
 
+    comment(func_name + " jumps forth and back " + std::to_string(max_labels) + " times");
+    comment("and returns timestamp counter after that");
     comment("uint64_t " + func_name + "()");
 
     global(func_name);
