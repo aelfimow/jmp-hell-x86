@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <valarray>
 #include <functional>
 
 #include "jmp_func.h"
@@ -8,7 +9,7 @@
 int main(int, char *[])
 try
 {
-    std::vector<std::function<uint64_t ()> const all_functions
+    std::vector<std::function<uint64_t ()>> const all_functions
     {
         jmp_hell_10,
         jmp_hell_20,
@@ -49,11 +50,26 @@ try
         jmp_hell_100000
     };
 
+    std::valarray<uint64_t> diffs(all_functions.size());
+    size_t cnt = 0U;
+
+    uint64_t T0 = jmp_hell_10();
+
     for (auto function: all_functions)
     {
-        uint64_t timestamp = function();
+        uint64_t const T1 = function();
 
-        std::cout << timestamp << std::endl;
+        uint64_t const diff = (T1 - T0);
+
+        diffs[cnt] = diff;
+        ++cnt;
+
+        T0 = T1;
+    }
+
+    for (uint64_t diff: diffs)
+    {
+        std::cout << diff << std::endl;
     }
 
     return EXIT_SUCCESS;
