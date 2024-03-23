@@ -10,6 +10,8 @@ ASFLAGS64  = --64
 CPPASM_INC = ../../cppasm/src
 CPPASM_OBJ = ../../cppasm/src/obj/*.o
 
+ASM_FILE = ../src/jmp_func.S
+
 .PHONY: compile
 .PHONY: link
 .PHONY: generate
@@ -25,7 +27,7 @@ link:
 	$(CXX) generate.o $(CPPASM_OBJ) -o generate.exe $(CXXFLAGS)
 
 generate:
-	./generate.exe > ../src/jmp_func.S
+	./generate.exe > $(ASM_FILE)
 
 check:
-	$(AS) result/jmp_func.S ${ASFLAGS64} -o jmp_func.o
+	$(AS) $(ASM_FILE) ${ASFLAGS64} -o jmp_func.o
