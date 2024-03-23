@@ -57,7 +57,7 @@ try
     {
         size_t cnt = 0U;
 
-        uint64_t T0 = jmp_hell_10();
+        uint64_t T0 = jmp_hell_100000();
 
         for (auto function: all_functions)
         {
@@ -74,11 +74,11 @@ try
         }
     }
 
-    for (size_t step = 0U; step < 10000U; ++step)
+    for (size_t step = 0U; step < 100000U; ++step)
     {
         size_t cnt = 0U;
 
-        uint64_t T0 = jmp_hell_10();
+        uint64_t T0 = jmp_hell_100000();
 
         for (auto function: all_functions)
         {
