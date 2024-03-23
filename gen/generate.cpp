@@ -1,5 +1,6 @@
 #include <iostream>
 #include <cstdlib>
+#include <vector>
 #include <numeric>
 
 #include "cppasm.h"
@@ -12,11 +13,51 @@ try
     section code { ".text" };
     code.start();
 
-    generate_func(1U);
-    generate_func(2U);
-    generate_func(3U);
-    generate_func(4U);
-    generate_func(6U);
+    std::vector<size_t> const all_max_labels
+    {
+        10U,
+        20U,
+        30U,
+        40U,
+        50U,
+        60U,
+        70U,
+        80U,
+        90U,
+        100U,
+        200U,
+        300U,
+        400U,
+        500U,
+        600U,
+        700U,
+        800U,
+        900U,
+        1000U,
+        2000U,
+        3000U,
+        4000U,
+        5000U,
+        6000U,
+        7000U,
+        8000U,
+        9000U,
+        10000U,
+        20000U,
+        30000U,
+        40000U,
+        50000U,
+        60000U,
+        70000U,
+        80000U,
+        90000U,
+        100000U
+    };
+
+    for (size_t max_labels: all_max_labels)
+    {
+        generate_func(max_labels);
+    }
 
     return EXIT_SUCCESS;
 }
@@ -34,7 +75,7 @@ static void generate_func(size_t max_labels)
     func_name.append("_");
     func_name.append(std::to_string(max_labels));
 
-    comment("void " + func_name + "()");
+    comment("uint64_t " + func_name + "()");
 
     global(func_name);
 
@@ -83,6 +124,16 @@ static void generate_func(size_t max_labels)
 
         if (generate_ret)
         {
+            // Get time stamp counter
+            RDTSC();
+
+            imm8 bits_to_shift { 32 };
+            bits_to_shift.dec();        // generate it as a decimal value
+
+            SHL(RDX, bits_to_shift);
+
+            OR(RAX, RDX);
+
             RET();
         }
         else
