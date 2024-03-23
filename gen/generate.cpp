@@ -6,10 +6,17 @@
 
 static void generate_func(size_t max_labels);
 
-int main(int argc, char *argv[])
+int main(int, char *[])
 try
 {
-    generate_func(10U);
+    section code { ".text" };
+    code.start();
+
+    generate_func(1U);
+    generate_func(2U);
+    generate_func(3U);
+    generate_func(4U);
+    generate_func(6U);
 
     return EXIT_SUCCESS;
 }
@@ -31,31 +38,46 @@ static void generate_func(size_t max_labels)
 
     global(func_name);
 
-    section code { ".text" };
-    code.start();
-
     label(func_name);
 
-    size_t cnt = 0U;
-    size_t const maxcnt = max_labels;
-    size_t const retcnt = (max_labels / 2U);
-
-    auto labelstr = [](size_t index) -> std::string
+    auto compute_retcnt = [&max_labels]() -> size_t
     {
-        std::string str = "label_";
+        bool const is_even = (0U == (max_labels % 2U));
 
+        if (is_even)
+        {
+            size_t const result = (max_labels / 2U);
+            return result;
+        }
+
+        size_t const result = ((max_labels + 1U) / 2U);
+        return result;
+    };
+
+    size_t const retcnt = compute_retcnt();
+
+    auto labelstr = [&func_name](size_t index) -> std::string
+    {
+        std::string str = func_name;
+
+        str.append("_label_");
         str.append(std::to_string(index));
 
         return str;
     };
 
-    JMP(labelstr(maxcnt - cnt));
-
-    while (maxcnt > cnt)
+    size_t labelcnt = max_labels;
     {
-        ++cnt;
+        std::string tmpstr = labelstr(labelcnt);
+        JMP(tmpstr);
+    }
 
-        label(labelstr(cnt));
+    for (size_t i = 0U, cnt = 1U; i < max_labels; ++i, ++cnt)
+    {
+        {
+            std::string tmpstr = labelstr(cnt);
+            label(tmpstr);
+        }
 
         bool const generate_ret = (cnt == retcnt);
 
@@ -65,7 +87,9 @@ static void generate_func(size_t max_labels)
         }
         else
         {
-            JMP(labelstr(maxcnt - cnt));
+            --labelcnt;
+            std::string tmpstr = labelstr(labelcnt);
+            JMP(tmpstr);
         }
     }
 }
