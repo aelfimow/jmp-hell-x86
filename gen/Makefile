@@ -103,7 +103,7 @@ generate:
 	./generate.exe 70000 > $(ASM_FILE_70000)
 	./generate.exe 80000 > $(ASM_FILE_80000)
 	./generate.exe 90000 > $(ASM_FILE_90000)
-	./generate.exe 100000 > $(ASM_FILE_10000)
+	./generate.exe 100000 > $(ASM_FILE_100000)
 
 check:
 	$(AS) $(ASM_FILE_10) $(ASFLAGS64) -o jmp_func_10.o
@@ -142,4 +142,4 @@ check:
 	$(AS) $(ASM_FILE_70000) $(ASFLAGS64) -o jmp_func_70000.o
 	$(AS) $(ASM_FILE_80000) $(ASFLAGS64) -o jmp_func_80000.o
 	$(AS) $(ASM_FILE_90000) $(ASFLAGS64) -o jmp_func_90000.o
-	$(AS) $(ASM_FILE_10000) $(ASFLAGS64) -o jmp_func_100000.o
+	$(AS) $(ASM_FILE_100000) $(ASFLAGS64) -o jmp_func_100000.o
