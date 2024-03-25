@@ -2,64 +2,39 @@
 #include <cstdlib>
 #include <vector>
 #include <numeric>
+#include <sstream>
+#include <stdexcept>
 
 #include "cppasm.h"
 
 static void generate_func(size_t max_labels);
 
-int main(int, char *[])
+int main(int argc, char *argv[])
 try
 {
+    if (argc != 2)
+    {
+        const std::string usageStr { "Usage: generate max_labels" };
+        throw std::invalid_argument(usageStr);
+    }
+
+    size_t max_labels = 0U;
+    {
+        std::stringstream ss { argv[1] };
+        ss >> max_labels;
+    }
+
     section code { ".text" };
     code.start();
 
-    std::vector<size_t> const all_max_labels
-    {
-        10U,
-        20U,
-        30U,
-        40U,
-        50U,
-        60U,
-        70U,
-        80U,
-        90U,
-        100U,
-        200U,
-        300U,
-        400U,
-        500U,
-        600U,
-        700U,
-        800U,
-        900U,
-        1000U,
-        2000U,
-        3000U,
-        4000U,
-        5000U,
-        6000U,
-        7000U,
-        8000U,
-        9000U,
-        10000U,
-        20000U,
-        30000U,
-        40000U,
-        50000U,
-        60000U,
-        70000U,
-        80000U,
-        90000U,
-        100000U
-    };
-
-    for (size_t max_labels: all_max_labels)
-    {
-        generate_func(max_labels);
-    }
+    generate_func(max_labels);
 
     return EXIT_SUCCESS;
+}
+catch (std::exception &exc)
+{
+    std::cerr << "Exception: " << exc.what() << std::endl;
+    return EXIT_FAILURE;
 }
 catch (...)
 {
