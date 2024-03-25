@@ -2,6 +2,7 @@
 #include <cstdlib>
 #include <valarray>
 #include <functional>
+#include <stdexcept>
 
 #include "jmp_func.h"
 
@@ -53,6 +54,60 @@ try
     std::valarray<uint64_t> diff_min(all_functions.size());
     std::valarray<uint64_t> diff_max(all_functions.size());
 
+    std::vector<size_t> const index_values
+    {
+        10U,
+        20U,
+        30U,
+        40U,
+        50U,
+        60U,
+        70U,
+        80U,
+        90U,
+        100U,
+        200U,
+        300U,
+        400U,
+        500U,
+        600U,
+        700U,
+        800U,
+        900U,
+        1000U,
+        2000U,
+        3000U,
+        4000U,
+        5000U,
+        6000U,
+        7000U,
+        8000U,
+        9000U,
+        10000U,
+        20000U,
+        30000U,
+        40000U,
+        50000U,
+        60000U,
+        70000U,
+        80000U,
+        90000U,
+        100000U
+    };
+
+    std::vector<bool> const checks
+    {
+        (diff_min.size() == diff_max.size()),
+        (index_values.size() == diff_max.size()),
+        (index_values.size() == diff_min.size())
+    };
+
+    if (not std::all_of(checks.cbegin(), checks.cend(), [](bool flag) { return flag; }))
+    {
+        const std::string size_check { "Size check failed" };
+        throw std::invalid_argument(size_check);
+    }
+
     // First run to initialize diff_min and diff_max
     {
         size_t cnt = 0U;
@@ -97,10 +152,15 @@ try
 
     for (size_t i = 0U; i < diff_min.size(); ++i)
     {
-        std::cout << diff_min[i] << " ... " << diff_max[i] << std::endl;
+        std::cout << index_values[i] << ": " << diff_min[i] << " ... " << diff_max[i] << std::endl;
     }
 
     return EXIT_SUCCESS;
+}
+catch (std::exception &exc)
+{
+    std::cerr << "Exception: " << exc.what() << std::endl;
+    return EXIT_FAILURE;
 }
 catch (...)
 {
