@@ -1,0 +1,1410 @@
+.section .text
+# jmp_hell_700 jumps forth and back 700 times
+# and returns timestamp counter after that
+# uint64_t jmp_hell_700()
+.global jmp_hell_700
+jmp_hell_700:
+	jmp jmp_hell_700_label_700
+jmp_hell_700_label_1:
+	jmp jmp_hell_700_label_699
+jmp_hell_700_label_2:
+	jmp jmp_hell_700_label_698
+jmp_hell_700_label_3:
+	jmp jmp_hell_700_label_697
+jmp_hell_700_label_4:
+	jmp jmp_hell_700_label_696
+jmp_hell_700_label_5:
+	jmp jmp_hell_700_label_695
+jmp_hell_700_label_6:
+	jmp jmp_hell_700_label_694
+jmp_hell_700_label_7:
+	jmp jmp_hell_700_label_693
+jmp_hell_700_label_8:
+	jmp jmp_hell_700_label_692
+jmp_hell_700_label_9:
+	jmp jmp_hell_700_label_691
+jmp_hell_700_label_10:
+	jmp jmp_hell_700_label_690
+jmp_hell_700_label_11:
+	jmp jmp_hell_700_label_689
+jmp_hell_700_label_12:
+	jmp jmp_hell_700_label_688
+jmp_hell_700_label_13:
+	jmp jmp_hell_700_label_687
+jmp_hell_700_label_14:
+	jmp jmp_hell_700_label_686
+jmp_hell_700_label_15:
+	jmp jmp_hell_700_label_685
+jmp_hell_700_label_16:
+	jmp jmp_hell_700_label_684
+jmp_hell_700_label_17:
+	jmp jmp_hell_700_label_683
+jmp_hell_700_label_18:
+	jmp jmp_hell_700_label_682
+jmp_hell_700_label_19:
+	jmp jmp_hell_700_label_681
+jmp_hell_700_label_20:
+	jmp jmp_hell_700_label_680
+jmp_hell_700_label_21:
+	jmp jmp_hell_700_label_679
+jmp_hell_700_label_22:
+	jmp jmp_hell_700_label_678
+jmp_hell_700_label_23:
+	jmp jmp_hell_700_label_677
+jmp_hell_700_label_24:
+	jmp jmp_hell_700_label_676
+jmp_hell_700_label_25:
+	jmp jmp_hell_700_label_675
+jmp_hell_700_label_26:
+	jmp jmp_hell_700_label_674
+jmp_hell_700_label_27:
+	jmp jmp_hell_700_label_673
+jmp_hell_700_label_28:
+	jmp jmp_hell_700_label_672
+jmp_hell_700_label_29:
+	jmp jmp_hell_700_label_671
+jmp_hell_700_label_30:
+	jmp jmp_hell_700_label_670
+jmp_hell_700_label_31:
+	jmp jmp_hell_700_label_669
+jmp_hell_700_label_32:
+	jmp jmp_hell_700_label_668
+jmp_hell_700_label_33:
+	jmp jmp_hell_700_label_667
+jmp_hell_700_label_34:
+	jmp jmp_hell_700_label_666
+jmp_hell_700_label_35:
+	jmp jmp_hell_700_label_665
+jmp_hell_700_label_36:
+	jmp jmp_hell_700_label_664
+jmp_hell_700_label_37:
+	jmp jmp_hell_700_label_663
+jmp_hell_700_label_38:
+	jmp jmp_hell_700_label_662
+jmp_hell_700_label_39:
+	jmp jmp_hell_700_label_661
+jmp_hell_700_label_40:
+	jmp jmp_hell_700_label_660
+jmp_hell_700_label_41:
+	jmp jmp_hell_700_label_659
+jmp_hell_700_label_42:
+	jmp jmp_hell_700_label_658
+jmp_hell_700_label_43:
+	jmp jmp_hell_700_label_657
+jmp_hell_700_label_44:
+	jmp jmp_hell_700_label_656
+jmp_hell_700_label_45:
+	jmp jmp_hell_700_label_655
+jmp_hell_700_label_46:
+	jmp jmp_hell_700_label_654
+jmp_hell_700_label_47:
+	jmp jmp_hell_700_label_653
+jmp_hell_700_label_48:
+	jmp jmp_hell_700_label_652
+jmp_hell_700_label_49:
+	jmp jmp_hell_700_label_651
+jmp_hell_700_label_50:
+	jmp jmp_hell_700_label_650
+jmp_hell_700_label_51:
+	jmp jmp_hell_700_label_649
+jmp_hell_700_label_52:
+	jmp jmp_hell_700_label_648
+jmp_hell_700_label_53:
+	jmp jmp_hell_700_label_647
+jmp_hell_700_label_54:
+	jmp jmp_hell_700_label_646
+jmp_hell_700_label_55:
+	jmp jmp_hell_700_label_645
+jmp_hell_700_label_56:
+	jmp jmp_hell_700_label_644
+jmp_hell_700_label_57:
+	jmp jmp_hell_700_label_643
+jmp_hell_700_label_58:
+	jmp jmp_hell_700_label_642
+jmp_hell_700_label_59:
+	jmp jmp_hell_700_label_641
+jmp_hell_700_label_60:
+	jmp jmp_hell_700_label_640
+jmp_hell_700_label_61:
+	jmp jmp_hell_700_label_639
+jmp_hell_700_label_62:
+	jmp jmp_hell_700_label_638
+jmp_hell_700_label_63:
+	jmp jmp_hell_700_label_637
+jmp_hell_700_label_64:
+	jmp jmp_hell_700_label_636
+jmp_hell_700_label_65:
+	jmp jmp_hell_700_label_635
+jmp_hell_700_label_66:
+	jmp jmp_hell_700_label_634
+jmp_hell_700_label_67:
+	jmp jmp_hell_700_label_633
+jmp_hell_700_label_68:
+	jmp jmp_hell_700_label_632
+jmp_hell_700_label_69:
+	jmp jmp_hell_700_label_631
+jmp_hell_700_label_70:
+	jmp jmp_hell_700_label_630
+jmp_hell_700_label_71:
+	jmp jmp_hell_700_label_629
+jmp_hell_700_label_72:
+	jmp jmp_hell_700_label_628
+jmp_hell_700_label_73:
+	jmp jmp_hell_700_label_627
+jmp_hell_700_label_74:
+	jmp jmp_hell_700_label_626
+jmp_hell_700_label_75:
+	jmp jmp_hell_700_label_625
+jmp_hell_700_label_76:
+	jmp jmp_hell_700_label_624
+jmp_hell_700_label_77:
+	jmp jmp_hell_700_label_623
+jmp_hell_700_label_78:
+	jmp jmp_hell_700_label_622
+jmp_hell_700_label_79:
+	jmp jmp_hell_700_label_621
+jmp_hell_700_label_80:
+	jmp jmp_hell_700_label_620
+jmp_hell_700_label_81:
+	jmp jmp_hell_700_label_619
+jmp_hell_700_label_82:
+	jmp jmp_hell_700_label_618
+jmp_hell_700_label_83:
+	jmp jmp_hell_700_label_617
+jmp_hell_700_label_84:
+	jmp jmp_hell_700_label_616
+jmp_hell_700_label_85:
+	jmp jmp_hell_700_label_615
+jmp_hell_700_label_86:
+	jmp jmp_hell_700_label_614
+jmp_hell_700_label_87:
+	jmp jmp_hell_700_label_613
+jmp_hell_700_label_88:
+	jmp jmp_hell_700_label_612
+jmp_hell_700_label_89:
+	jmp jmp_hell_700_label_611
+jmp_hell_700_label_90:
+	jmp jmp_hell_700_label_610
+jmp_hell_700_label_91:
+	jmp jmp_hell_700_label_609
+jmp_hell_700_label_92:
+	jmp jmp_hell_700_label_608
+jmp_hell_700_label_93:
+	jmp jmp_hell_700_label_607
+jmp_hell_700_label_94:
+	jmp jmp_hell_700_label_606
+jmp_hell_700_label_95:
+	jmp jmp_hell_700_label_605
+jmp_hell_700_label_96:
+	jmp jmp_hell_700_label_604
+jmp_hell_700_label_97:
+	jmp jmp_hell_700_label_603
+jmp_hell_700_label_98:
+	jmp jmp_hell_700_label_602
+jmp_hell_700_label_99:
+	jmp jmp_hell_700_label_601
+jmp_hell_700_label_100:
+	jmp jmp_hell_700_label_600
+jmp_hell_700_label_101:
+	jmp jmp_hell_700_label_599
+jmp_hell_700_label_102:
+	jmp jmp_hell_700_label_598
+jmp_hell_700_label_103:
+	jmp jmp_hell_700_label_597
+jmp_hell_700_label_104:
+	jmp jmp_hell_700_label_596
+jmp_hell_700_label_105:
+	jmp jmp_hell_700_label_595
+jmp_hell_700_label_106:
+	jmp jmp_hell_700_label_594
+jmp_hell_700_label_107:
+	jmp jmp_hell_700_label_593
+jmp_hell_700_label_108:
+	jmp jmp_hell_700_label_592
+jmp_hell_700_label_109:
+	jmp jmp_hell_700_label_591
+jmp_hell_700_label_110:
+	jmp jmp_hell_700_label_590
+jmp_hell_700_label_111:
+	jmp jmp_hell_700_label_589
+jmp_hell_700_label_112:
+	jmp jmp_hell_700_label_588
+jmp_hell_700_label_113:
+	jmp jmp_hell_700_label_587
+jmp_hell_700_label_114:
+	jmp jmp_hell_700_label_586
+jmp_hell_700_label_115:
+	jmp jmp_hell_700_label_585
+jmp_hell_700_label_116:
+	jmp jmp_hell_700_label_584
+jmp_hell_700_label_117:
+	jmp jmp_hell_700_label_583
+jmp_hell_700_label_118:
+	jmp jmp_hell_700_label_582
+jmp_hell_700_label_119:
+	jmp jmp_hell_700_label_581
+jmp_hell_700_label_120:
+	jmp jmp_hell_700_label_580
+jmp_hell_700_label_121:
+	jmp jmp_hell_700_label_579
+jmp_hell_700_label_122:
+	jmp jmp_hell_700_label_578
+jmp_hell_700_label_123:
+	jmp jmp_hell_700_label_577
+jmp_hell_700_label_124:
+	jmp jmp_hell_700_label_576
+jmp_hell_700_label_125:
+	jmp jmp_hell_700_label_575
+jmp_hell_700_label_126:
+	jmp jmp_hell_700_label_574
+jmp_hell_700_label_127:
+	jmp jmp_hell_700_label_573
+jmp_hell_700_label_128:
+	jmp jmp_hell_700_label_572
+jmp_hell_700_label_129:
+	jmp jmp_hell_700_label_571
+jmp_hell_700_label_130:
+	jmp jmp_hell_700_label_570
+jmp_hell_700_label_131:
+	jmp jmp_hell_700_label_569
+jmp_hell_700_label_132:
+	jmp jmp_hell_700_label_568
+jmp_hell_700_label_133:
+	jmp jmp_hell_700_label_567
+jmp_hell_700_label_134:
+	jmp jmp_hell_700_label_566
+jmp_hell_700_label_135:
+	jmp jmp_hell_700_label_565
+jmp_hell_700_label_136:
+	jmp jmp_hell_700_label_564
+jmp_hell_700_label_137:
+	jmp jmp_hell_700_label_563
+jmp_hell_700_label_138:
+	jmp jmp_hell_700_label_562
+jmp_hell_700_label_139:
+	jmp jmp_hell_700_label_561
+jmp_hell_700_label_140:
+	jmp jmp_hell_700_label_560
+jmp_hell_700_label_141:
+	jmp jmp_hell_700_label_559
+jmp_hell_700_label_142:
+	jmp jmp_hell_700_label_558
+jmp_hell_700_label_143:
+	jmp jmp_hell_700_label_557
+jmp_hell_700_label_144:
+	jmp jmp_hell_700_label_556
+jmp_hell_700_label_145:
+	jmp jmp_hell_700_label_555
+jmp_hell_700_label_146:
+	jmp jmp_hell_700_label_554
+jmp_hell_700_label_147:
+	jmp jmp_hell_700_label_553
+jmp_hell_700_label_148:
+	jmp jmp_hell_700_label_552
+jmp_hell_700_label_149:
+	jmp jmp_hell_700_label_551
+jmp_hell_700_label_150:
+	jmp jmp_hell_700_label_550
+jmp_hell_700_label_151:
+	jmp jmp_hell_700_label_549
+jmp_hell_700_label_152:
+	jmp jmp_hell_700_label_548
+jmp_hell_700_label_153:
+	jmp jmp_hell_700_label_547
+jmp_hell_700_label_154:
+	jmp jmp_hell_700_label_546
+jmp_hell_700_label_155:
+	jmp jmp_hell_700_label_545
+jmp_hell_700_label_156:
+	jmp jmp_hell_700_label_544
+jmp_hell_700_label_157:
+	jmp jmp_hell_700_label_543
+jmp_hell_700_label_158:
+	jmp jmp_hell_700_label_542
+jmp_hell_700_label_159:
+	jmp jmp_hell_700_label_541
+jmp_hell_700_label_160:
+	jmp jmp_hell_700_label_540
+jmp_hell_700_label_161:
+	jmp jmp_hell_700_label_539
+jmp_hell_700_label_162:
+	jmp jmp_hell_700_label_538
+jmp_hell_700_label_163:
+	jmp jmp_hell_700_label_537
+jmp_hell_700_label_164:
+	jmp jmp_hell_700_label_536
+jmp_hell_700_label_165:
+	jmp jmp_hell_700_label_535
+jmp_hell_700_label_166:
+	jmp jmp_hell_700_label_534
+jmp_hell_700_label_167:
+	jmp jmp_hell_700_label_533
+jmp_hell_700_label_168:
+	jmp jmp_hell_700_label_532
+jmp_hell_700_label_169:
+	jmp jmp_hell_700_label_531
+jmp_hell_700_label_170:
+	jmp jmp_hell_700_label_530
+jmp_hell_700_label_171:
+	jmp jmp_hell_700_label_529
+jmp_hell_700_label_172:
+	jmp jmp_hell_700_label_528
+jmp_hell_700_label_173:
+	jmp jmp_hell_700_label_527
+jmp_hell_700_label_174:
+	jmp jmp_hell_700_label_526
+jmp_hell_700_label_175:
+	jmp jmp_hell_700_label_525
+jmp_hell_700_label_176:
+	jmp jmp_hell_700_label_524
+jmp_hell_700_label_177:
+	jmp jmp_hell_700_label_523
+jmp_hell_700_label_178:
+	jmp jmp_hell_700_label_522
+jmp_hell_700_label_179:
+	jmp jmp_hell_700_label_521
+jmp_hell_700_label_180:
+	jmp jmp_hell_700_label_520
+jmp_hell_700_label_181:
+	jmp jmp_hell_700_label_519
+jmp_hell_700_label_182:
+	jmp jmp_hell_700_label_518
+jmp_hell_700_label_183:
+	jmp jmp_hell_700_label_517
+jmp_hell_700_label_184:
+	jmp jmp_hell_700_label_516
+jmp_hell_700_label_185:
+	jmp jmp_hell_700_label_515
+jmp_hell_700_label_186:
+	jmp jmp_hell_700_label_514
+jmp_hell_700_label_187:
+	jmp jmp_hell_700_label_513
+jmp_hell_700_label_188:
+	jmp jmp_hell_700_label_512
+jmp_hell_700_label_189:
+	jmp jmp_hell_700_label_511
+jmp_hell_700_label_190:
+	jmp jmp_hell_700_label_510
+jmp_hell_700_label_191:
+	jmp jmp_hell_700_label_509
+jmp_hell_700_label_192:
+	jmp jmp_hell_700_label_508
+jmp_hell_700_label_193:
+	jmp jmp_hell_700_label_507
+jmp_hell_700_label_194:
+	jmp jmp_hell_700_label_506
+jmp_hell_700_label_195:
+	jmp jmp_hell_700_label_505
+jmp_hell_700_label_196:
+	jmp jmp_hell_700_label_504
+jmp_hell_700_label_197:
+	jmp jmp_hell_700_label_503
+jmp_hell_700_label_198:
+	jmp jmp_hell_700_label_502
+jmp_hell_700_label_199:
+	jmp jmp_hell_700_label_501
+jmp_hell_700_label_200:
+	jmp jmp_hell_700_label_500
+jmp_hell_700_label_201:
+	jmp jmp_hell_700_label_499
+jmp_hell_700_label_202:
+	jmp jmp_hell_700_label_498
+jmp_hell_700_label_203:
+	jmp jmp_hell_700_label_497
+jmp_hell_700_label_204:
+	jmp jmp_hell_700_label_496
+jmp_hell_700_label_205:
+	jmp jmp_hell_700_label_495
+jmp_hell_700_label_206:
+	jmp jmp_hell_700_label_494
+jmp_hell_700_label_207:
+	jmp jmp_hell_700_label_493
+jmp_hell_700_label_208:
+	jmp jmp_hell_700_label_492
+jmp_hell_700_label_209:
+	jmp jmp_hell_700_label_491
+jmp_hell_700_label_210:
+	jmp jmp_hell_700_label_490
+jmp_hell_700_label_211:
+	jmp jmp_hell_700_label_489
+jmp_hell_700_label_212:
+	jmp jmp_hell_700_label_488
+jmp_hell_700_label_213:
+	jmp jmp_hell_700_label_487
+jmp_hell_700_label_214:
+	jmp jmp_hell_700_label_486
+jmp_hell_700_label_215:
+	jmp jmp_hell_700_label_485
+jmp_hell_700_label_216:
+	jmp jmp_hell_700_label_484
+jmp_hell_700_label_217:
+	jmp jmp_hell_700_label_483
+jmp_hell_700_label_218:
+	jmp jmp_hell_700_label_482
+jmp_hell_700_label_219:
+	jmp jmp_hell_700_label_481
+jmp_hell_700_label_220:
+	jmp jmp_hell_700_label_480
+jmp_hell_700_label_221:
+	jmp jmp_hell_700_label_479
+jmp_hell_700_label_222:
+	jmp jmp_hell_700_label_478
+jmp_hell_700_label_223:
+	jmp jmp_hell_700_label_477
+jmp_hell_700_label_224:
+	jmp jmp_hell_700_label_476
+jmp_hell_700_label_225:
+	jmp jmp_hell_700_label_475
+jmp_hell_700_label_226:
+	jmp jmp_hell_700_label_474
+jmp_hell_700_label_227:
+	jmp jmp_hell_700_label_473
+jmp_hell_700_label_228:
+	jmp jmp_hell_700_label_472
+jmp_hell_700_label_229:
+	jmp jmp_hell_700_label_471
+jmp_hell_700_label_230:
+	jmp jmp_hell_700_label_470
+jmp_hell_700_label_231:
+	jmp jmp_hell_700_label_469
+jmp_hell_700_label_232:
+	jmp jmp_hell_700_label_468
+jmp_hell_700_label_233:
+	jmp jmp_hell_700_label_467
+jmp_hell_700_label_234:
+	jmp jmp_hell_700_label_466
+jmp_hell_700_label_235:
+	jmp jmp_hell_700_label_465
+jmp_hell_700_label_236:
+	jmp jmp_hell_700_label_464
+jmp_hell_700_label_237:
+	jmp jmp_hell_700_label_463
+jmp_hell_700_label_238:
+	jmp jmp_hell_700_label_462
+jmp_hell_700_label_239:
+	jmp jmp_hell_700_label_461
+jmp_hell_700_label_240:
+	jmp jmp_hell_700_label_460
+jmp_hell_700_label_241:
+	jmp jmp_hell_700_label_459
+jmp_hell_700_label_242:
+	jmp jmp_hell_700_label_458
+jmp_hell_700_label_243:
+	jmp jmp_hell_700_label_457
+jmp_hell_700_label_244:
+	jmp jmp_hell_700_label_456
+jmp_hell_700_label_245:
+	jmp jmp_hell_700_label_455
+jmp_hell_700_label_246:
+	jmp jmp_hell_700_label_454
+jmp_hell_700_label_247:
+	jmp jmp_hell_700_label_453
+jmp_hell_700_label_248:
+	jmp jmp_hell_700_label_452
+jmp_hell_700_label_249:
+	jmp jmp_hell_700_label_451
+jmp_hell_700_label_250:
+	jmp jmp_hell_700_label_450
+jmp_hell_700_label_251:
+	jmp jmp_hell_700_label_449
+jmp_hell_700_label_252:
+	jmp jmp_hell_700_label_448
+jmp_hell_700_label_253:
+	jmp jmp_hell_700_label_447
+jmp_hell_700_label_254:
+	jmp jmp_hell_700_label_446
+jmp_hell_700_label_255:
+	jmp jmp_hell_700_label_445
+jmp_hell_700_label_256:
+	jmp jmp_hell_700_label_444
+jmp_hell_700_label_257:
+	jmp jmp_hell_700_label_443
+jmp_hell_700_label_258:
+	jmp jmp_hell_700_label_442
+jmp_hell_700_label_259:
+	jmp jmp_hell_700_label_441
+jmp_hell_700_label_260:
+	jmp jmp_hell_700_label_440
+jmp_hell_700_label_261:
+	jmp jmp_hell_700_label_439
+jmp_hell_700_label_262:
+	jmp jmp_hell_700_label_438
+jmp_hell_700_label_263:
+	jmp jmp_hell_700_label_437
+jmp_hell_700_label_264:
+	jmp jmp_hell_700_label_436
+jmp_hell_700_label_265:
+	jmp jmp_hell_700_label_435
+jmp_hell_700_label_266:
+	jmp jmp_hell_700_label_434
+jmp_hell_700_label_267:
+	jmp jmp_hell_700_label_433
+jmp_hell_700_label_268:
+	jmp jmp_hell_700_label_432
+jmp_hell_700_label_269:
+	jmp jmp_hell_700_label_431
+jmp_hell_700_label_270:
+	jmp jmp_hell_700_label_430
+jmp_hell_700_label_271:
+	jmp jmp_hell_700_label_429
+jmp_hell_700_label_272:
+	jmp jmp_hell_700_label_428
+jmp_hell_700_label_273:
+	jmp jmp_hell_700_label_427
+jmp_hell_700_label_274:
+	jmp jmp_hell_700_label_426
+jmp_hell_700_label_275:
+	jmp jmp_hell_700_label_425
+jmp_hell_700_label_276:
+	jmp jmp_hell_700_label_424
+jmp_hell_700_label_277:
+	jmp jmp_hell_700_label_423
+jmp_hell_700_label_278:
+	jmp jmp_hell_700_label_422
+jmp_hell_700_label_279:
+	jmp jmp_hell_700_label_421
+jmp_hell_700_label_280:
+	jmp jmp_hell_700_label_420
+jmp_hell_700_label_281:
+	jmp jmp_hell_700_label_419
+jmp_hell_700_label_282:
+	jmp jmp_hell_700_label_418
+jmp_hell_700_label_283:
+	jmp jmp_hell_700_label_417
+jmp_hell_700_label_284:
+	jmp jmp_hell_700_label_416
+jmp_hell_700_label_285:
+	jmp jmp_hell_700_label_415
+jmp_hell_700_label_286:
+	jmp jmp_hell_700_label_414
+jmp_hell_700_label_287:
+	jmp jmp_hell_700_label_413
+jmp_hell_700_label_288:
+	jmp jmp_hell_700_label_412
+jmp_hell_700_label_289:
+	jmp jmp_hell_700_label_411
+jmp_hell_700_label_290:
+	jmp jmp_hell_700_label_410
+jmp_hell_700_label_291:
+	jmp jmp_hell_700_label_409
+jmp_hell_700_label_292:
+	jmp jmp_hell_700_label_408
+jmp_hell_700_label_293:
+	jmp jmp_hell_700_label_407
+jmp_hell_700_label_294:
+	jmp jmp_hell_700_label_406
+jmp_hell_700_label_295:
+	jmp jmp_hell_700_label_405
+jmp_hell_700_label_296:
+	jmp jmp_hell_700_label_404
+jmp_hell_700_label_297:
+	jmp jmp_hell_700_label_403
+jmp_hell_700_label_298:
+	jmp jmp_hell_700_label_402
+jmp_hell_700_label_299:
+	jmp jmp_hell_700_label_401
+jmp_hell_700_label_300:
+	jmp jmp_hell_700_label_400
+jmp_hell_700_label_301:
+	jmp jmp_hell_700_label_399
+jmp_hell_700_label_302:
+	jmp jmp_hell_700_label_398
+jmp_hell_700_label_303:
+	jmp jmp_hell_700_label_397
+jmp_hell_700_label_304:
+	jmp jmp_hell_700_label_396
+jmp_hell_700_label_305:
+	jmp jmp_hell_700_label_395
+jmp_hell_700_label_306:
+	jmp jmp_hell_700_label_394
+jmp_hell_700_label_307:
+	jmp jmp_hell_700_label_393
+jmp_hell_700_label_308:
+	jmp jmp_hell_700_label_392
+jmp_hell_700_label_309:
+	jmp jmp_hell_700_label_391
+jmp_hell_700_label_310:
+	jmp jmp_hell_700_label_390
+jmp_hell_700_label_311:
+	jmp jmp_hell_700_label_389
+jmp_hell_700_label_312:
+	jmp jmp_hell_700_label_388
+jmp_hell_700_label_313:
+	jmp jmp_hell_700_label_387
+jmp_hell_700_label_314:
+	jmp jmp_hell_700_label_386
+jmp_hell_700_label_315:
+	jmp jmp_hell_700_label_385
+jmp_hell_700_label_316:
+	jmp jmp_hell_700_label_384
+jmp_hell_700_label_317:
+	jmp jmp_hell_700_label_383
+jmp_hell_700_label_318:
+	jmp jmp_hell_700_label_382
+jmp_hell_700_label_319:
+	jmp jmp_hell_700_label_381
+jmp_hell_700_label_320:
+	jmp jmp_hell_700_label_380
+jmp_hell_700_label_321:
+	jmp jmp_hell_700_label_379
+jmp_hell_700_label_322:
+	jmp jmp_hell_700_label_378
+jmp_hell_700_label_323:
+	jmp jmp_hell_700_label_377
+jmp_hell_700_label_324:
+	jmp jmp_hell_700_label_376
+jmp_hell_700_label_325:
+	jmp jmp_hell_700_label_375
+jmp_hell_700_label_326:
+	jmp jmp_hell_700_label_374
+jmp_hell_700_label_327:
+	jmp jmp_hell_700_label_373
+jmp_hell_700_label_328:
+	jmp jmp_hell_700_label_372
+jmp_hell_700_label_329:
+	jmp jmp_hell_700_label_371
+jmp_hell_700_label_330:
+	jmp jmp_hell_700_label_370
+jmp_hell_700_label_331:
+	jmp jmp_hell_700_label_369
+jmp_hell_700_label_332:
+	jmp jmp_hell_700_label_368
+jmp_hell_700_label_333:
+	jmp jmp_hell_700_label_367
+jmp_hell_700_label_334:
+	jmp jmp_hell_700_label_366
+jmp_hell_700_label_335:
+	jmp jmp_hell_700_label_365
+jmp_hell_700_label_336:
+	jmp jmp_hell_700_label_364
+jmp_hell_700_label_337:
+	jmp jmp_hell_700_label_363
+jmp_hell_700_label_338:
+	jmp jmp_hell_700_label_362
+jmp_hell_700_label_339:
+	jmp jmp_hell_700_label_361
+jmp_hell_700_label_340:
+	jmp jmp_hell_700_label_360
+jmp_hell_700_label_341:
+	jmp jmp_hell_700_label_359
+jmp_hell_700_label_342:
+	jmp jmp_hell_700_label_358
+jmp_hell_700_label_343:
+	jmp jmp_hell_700_label_357
+jmp_hell_700_label_344:
+	jmp jmp_hell_700_label_356
+jmp_hell_700_label_345:
+	jmp jmp_hell_700_label_355
+jmp_hell_700_label_346:
+	jmp jmp_hell_700_label_354
+jmp_hell_700_label_347:
+	jmp jmp_hell_700_label_353
+jmp_hell_700_label_348:
+	jmp jmp_hell_700_label_352
+jmp_hell_700_label_349:
+	jmp jmp_hell_700_label_351
+jmp_hell_700_label_350:
+	rdtsc
+	shl $32, %rdx
+	or %rdx, %rax
+	ret
+jmp_hell_700_label_351:
+	jmp jmp_hell_700_label_350
+jmp_hell_700_label_352:
+	jmp jmp_hell_700_label_349
+jmp_hell_700_label_353:
+	jmp jmp_hell_700_label_348
+jmp_hell_700_label_354:
+	jmp jmp_hell_700_label_347
+jmp_hell_700_label_355:
+	jmp jmp_hell_700_label_346
+jmp_hell_700_label_356:
+	jmp jmp_hell_700_label_345
+jmp_hell_700_label_357:
+	jmp jmp_hell_700_label_344
+jmp_hell_700_label_358:
+	jmp jmp_hell_700_label_343
+jmp_hell_700_label_359:
+	jmp jmp_hell_700_label_342
+jmp_hell_700_label_360:
+	jmp jmp_hell_700_label_341
+jmp_hell_700_label_361:
+	jmp jmp_hell_700_label_340
+jmp_hell_700_label_362:
+	jmp jmp_hell_700_label_339
+jmp_hell_700_label_363:
+	jmp jmp_hell_700_label_338
+jmp_hell_700_label_364:
+	jmp jmp_hell_700_label_337
+jmp_hell_700_label_365:
+	jmp jmp_hell_700_label_336
+jmp_hell_700_label_366:
+	jmp jmp_hell_700_label_335
+jmp_hell_700_label_367:
+	jmp jmp_hell_700_label_334
+jmp_hell_700_label_368:
+	jmp jmp_hell_700_label_333
+jmp_hell_700_label_369:
+	jmp jmp_hell_700_label_332
+jmp_hell_700_label_370:
+	jmp jmp_hell_700_label_331
+jmp_hell_700_label_371:
+	jmp jmp_hell_700_label_330
+jmp_hell_700_label_372:
+	jmp jmp_hell_700_label_329
+jmp_hell_700_label_373:
+	jmp jmp_hell_700_label_328
+jmp_hell_700_label_374:
+	jmp jmp_hell_700_label_327
+jmp_hell_700_label_375:
+	jmp jmp_hell_700_label_326
+jmp_hell_700_label_376:
+	jmp jmp_hell_700_label_325
+jmp_hell_700_label_377:
+	jmp jmp_hell_700_label_324
+jmp_hell_700_label_378:
+	jmp jmp_hell_700_label_323
+jmp_hell_700_label_379:
+	jmp jmp_hell_700_label_322
+jmp_hell_700_label_380:
+	jmp jmp_hell_700_label_321
+jmp_hell_700_label_381:
+	jmp jmp_hell_700_label_320
+jmp_hell_700_label_382:
+	jmp jmp_hell_700_label_319
+jmp_hell_700_label_383:
+	jmp jmp_hell_700_label_318
+jmp_hell_700_label_384:
+	jmp jmp_hell_700_label_317
+jmp_hell_700_label_385:
+	jmp jmp_hell_700_label_316
+jmp_hell_700_label_386:
+	jmp jmp_hell_700_label_315
+jmp_hell_700_label_387:
+	jmp jmp_hell_700_label_314
+jmp_hell_700_label_388:
+	jmp jmp_hell_700_label_313
+jmp_hell_700_label_389:
+	jmp jmp_hell_700_label_312
+jmp_hell_700_label_390:
+	jmp jmp_hell_700_label_311
+jmp_hell_700_label_391:
+	jmp jmp_hell_700_label_310
+jmp_hell_700_label_392:
+	jmp jmp_hell_700_label_309
+jmp_hell_700_label_393:
+	jmp jmp_hell_700_label_308
+jmp_hell_700_label_394:
+	jmp jmp_hell_700_label_307
+jmp_hell_700_label_395:
+	jmp jmp_hell_700_label_306
+jmp_hell_700_label_396:
+	jmp jmp_hell_700_label_305
+jmp_hell_700_label_397:
+	jmp jmp_hell_700_label_304
+jmp_hell_700_label_398:
+	jmp jmp_hell_700_label_303
+jmp_hell_700_label_399:
+	jmp jmp_hell_700_label_302
+jmp_hell_700_label_400:
+	jmp jmp_hell_700_label_301
+jmp_hell_700_label_401:
+	jmp jmp_hell_700_label_300
+jmp_hell_700_label_402:
+	jmp jmp_hell_700_label_299
+jmp_hell_700_label_403:
+	jmp jmp_hell_700_label_298
+jmp_hell_700_label_404:
+	jmp jmp_hell_700_label_297
+jmp_hell_700_label_405:
+	jmp jmp_hell_700_label_296
+jmp_hell_700_label_406:
+	jmp jmp_hell_700_label_295
+jmp_hell_700_label_407:
+	jmp jmp_hell_700_label_294
+jmp_hell_700_label_408:
+	jmp jmp_hell_700_label_293
+jmp_hell_700_label_409:
+	jmp jmp_hell_700_label_292
+jmp_hell_700_label_410:
+	jmp jmp_hell_700_label_291
+jmp_hell_700_label_411:
+	jmp jmp_hell_700_label_290
+jmp_hell_700_label_412:
+	jmp jmp_hell_700_label_289
+jmp_hell_700_label_413:
+	jmp jmp_hell_700_label_288
+jmp_hell_700_label_414:
+	jmp jmp_hell_700_label_287
+jmp_hell_700_label_415:
+	jmp jmp_hell_700_label_286
+jmp_hell_700_label_416:
+	jmp jmp_hell_700_label_285
+jmp_hell_700_label_417:
+	jmp jmp_hell_700_label_284
+jmp_hell_700_label_418:
+	jmp jmp_hell_700_label_283
+jmp_hell_700_label_419:
+	jmp jmp_hell_700_label_282
+jmp_hell_700_label_420:
+	jmp jmp_hell_700_label_281
+jmp_hell_700_label_421:
+	jmp jmp_hell_700_label_280
+jmp_hell_700_label_422:
+	jmp jmp_hell_700_label_279
+jmp_hell_700_label_423:
+	jmp jmp_hell_700_label_278
+jmp_hell_700_label_424:
+	jmp jmp_hell_700_label_277
+jmp_hell_700_label_425:
+	jmp jmp_hell_700_label_276
+jmp_hell_700_label_426:
+	jmp jmp_hell_700_label_275
+jmp_hell_700_label_427:
+	jmp jmp_hell_700_label_274
+jmp_hell_700_label_428:
+	jmp jmp_hell_700_label_273
+jmp_hell_700_label_429:
+	jmp jmp_hell_700_label_272
+jmp_hell_700_label_430:
+	jmp jmp_hell_700_label_271
+jmp_hell_700_label_431:
+	jmp jmp_hell_700_label_270
+jmp_hell_700_label_432:
+	jmp jmp_hell_700_label_269
+jmp_hell_700_label_433:
+	jmp jmp_hell_700_label_268
+jmp_hell_700_label_434:
+	jmp jmp_hell_700_label_267
+jmp_hell_700_label_435:
+	jmp jmp_hell_700_label_266
+jmp_hell_700_label_436:
+	jmp jmp_hell_700_label_265
+jmp_hell_700_label_437:
+	jmp jmp_hell_700_label_264
+jmp_hell_700_label_438:
+	jmp jmp_hell_700_label_263
+jmp_hell_700_label_439:
+	jmp jmp_hell_700_label_262
+jmp_hell_700_label_440:
+	jmp jmp_hell_700_label_261
+jmp_hell_700_label_441:
+	jmp jmp_hell_700_label_260
+jmp_hell_700_label_442:
+	jmp jmp_hell_700_label_259
+jmp_hell_700_label_443:
+	jmp jmp_hell_700_label_258
+jmp_hell_700_label_444:
+	jmp jmp_hell_700_label_257
+jmp_hell_700_label_445:
+	jmp jmp_hell_700_label_256
+jmp_hell_700_label_446:
+	jmp jmp_hell_700_label_255
+jmp_hell_700_label_447:
+	jmp jmp_hell_700_label_254
+jmp_hell_700_label_448:
+	jmp jmp_hell_700_label_253
+jmp_hell_700_label_449:
+	jmp jmp_hell_700_label_252
+jmp_hell_700_label_450:
+	jmp jmp_hell_700_label_251
+jmp_hell_700_label_451:
+	jmp jmp_hell_700_label_250
+jmp_hell_700_label_452:
+	jmp jmp_hell_700_label_249
+jmp_hell_700_label_453:
+	jmp jmp_hell_700_label_248
+jmp_hell_700_label_454:
+	jmp jmp_hell_700_label_247
+jmp_hell_700_label_455:
+	jmp jmp_hell_700_label_246
+jmp_hell_700_label_456:
+	jmp jmp_hell_700_label_245
+jmp_hell_700_label_457:
+	jmp jmp_hell_700_label_244
+jmp_hell_700_label_458:
+	jmp jmp_hell_700_label_243
+jmp_hell_700_label_459:
+	jmp jmp_hell_700_label_242
+jmp_hell_700_label_460:
+	jmp jmp_hell_700_label_241
+jmp_hell_700_label_461:
+	jmp jmp_hell_700_label_240
+jmp_hell_700_label_462:
+	jmp jmp_hell_700_label_239
+jmp_hell_700_label_463:
+	jmp jmp_hell_700_label_238
+jmp_hell_700_label_464:
+	jmp jmp_hell_700_label_237
+jmp_hell_700_label_465:
+	jmp jmp_hell_700_label_236
+jmp_hell_700_label_466:
+	jmp jmp_hell_700_label_235
+jmp_hell_700_label_467:
+	jmp jmp_hell_700_label_234
+jmp_hell_700_label_468:
+	jmp jmp_hell_700_label_233
+jmp_hell_700_label_469:
+	jmp jmp_hell_700_label_232
+jmp_hell_700_label_470:
+	jmp jmp_hell_700_label_231
+jmp_hell_700_label_471:
+	jmp jmp_hell_700_label_230
+jmp_hell_700_label_472:
+	jmp jmp_hell_700_label_229
+jmp_hell_700_label_473:
+	jmp jmp_hell_700_label_228
+jmp_hell_700_label_474:
+	jmp jmp_hell_700_label_227
+jmp_hell_700_label_475:
+	jmp jmp_hell_700_label_226
+jmp_hell_700_label_476:
+	jmp jmp_hell_700_label_225
+jmp_hell_700_label_477:
+	jmp jmp_hell_700_label_224
+jmp_hell_700_label_478:
+	jmp jmp_hell_700_label_223
+jmp_hell_700_label_479:
+	jmp jmp_hell_700_label_222
+jmp_hell_700_label_480:
+	jmp jmp_hell_700_label_221
+jmp_hell_700_label_481:
+	jmp jmp_hell_700_label_220
+jmp_hell_700_label_482:
+	jmp jmp_hell_700_label_219
+jmp_hell_700_label_483:
+	jmp jmp_hell_700_label_218
+jmp_hell_700_label_484:
+	jmp jmp_hell_700_label_217
+jmp_hell_700_label_485:
+	jmp jmp_hell_700_label_216
+jmp_hell_700_label_486:
+	jmp jmp_hell_700_label_215
+jmp_hell_700_label_487:
+	jmp jmp_hell_700_label_214
+jmp_hell_700_label_488:
+	jmp jmp_hell_700_label_213
+jmp_hell_700_label_489:
+	jmp jmp_hell_700_label_212
+jmp_hell_700_label_490:
+	jmp jmp_hell_700_label_211
+jmp_hell_700_label_491:
+	jmp jmp_hell_700_label_210
+jmp_hell_700_label_492:
+	jmp jmp_hell_700_label_209
+jmp_hell_700_label_493:
+	jmp jmp_hell_700_label_208
+jmp_hell_700_label_494:
+	jmp jmp_hell_700_label_207
+jmp_hell_700_label_495:
+	jmp jmp_hell_700_label_206
+jmp_hell_700_label_496:
+	jmp jmp_hell_700_label_205
+jmp_hell_700_label_497:
+	jmp jmp_hell_700_label_204
+jmp_hell_700_label_498:
+	jmp jmp_hell_700_label_203
+jmp_hell_700_label_499:
+	jmp jmp_hell_700_label_202
+jmp_hell_700_label_500:
+	jmp jmp_hell_700_label_201
+jmp_hell_700_label_501:
+	jmp jmp_hell_700_label_200
+jmp_hell_700_label_502:
+	jmp jmp_hell_700_label_199
+jmp_hell_700_label_503:
+	jmp jmp_hell_700_label_198
+jmp_hell_700_label_504:
+	jmp jmp_hell_700_label_197
+jmp_hell_700_label_505:
+	jmp jmp_hell_700_label_196
+jmp_hell_700_label_506:
+	jmp jmp_hell_700_label_195
+jmp_hell_700_label_507:
+	jmp jmp_hell_700_label_194
+jmp_hell_700_label_508:
+	jmp jmp_hell_700_label_193
+jmp_hell_700_label_509:
+	jmp jmp_hell_700_label_192
+jmp_hell_700_label_510:
+	jmp jmp_hell_700_label_191
+jmp_hell_700_label_511:
+	jmp jmp_hell_700_label_190
+jmp_hell_700_label_512:
+	jmp jmp_hell_700_label_189
+jmp_hell_700_label_513:
+	jmp jmp_hell_700_label_188
+jmp_hell_700_label_514:
+	jmp jmp_hell_700_label_187
+jmp_hell_700_label_515:
+	jmp jmp_hell_700_label_186
+jmp_hell_700_label_516:
+	jmp jmp_hell_700_label_185
+jmp_hell_700_label_517:
+	jmp jmp_hell_700_label_184
+jmp_hell_700_label_518:
+	jmp jmp_hell_700_label_183
+jmp_hell_700_label_519:
+	jmp jmp_hell_700_label_182
+jmp_hell_700_label_520:
+	jmp jmp_hell_700_label_181
+jmp_hell_700_label_521:
+	jmp jmp_hell_700_label_180
+jmp_hell_700_label_522:
+	jmp jmp_hell_700_label_179
+jmp_hell_700_label_523:
+	jmp jmp_hell_700_label_178
+jmp_hell_700_label_524:
+	jmp jmp_hell_700_label_177
+jmp_hell_700_label_525:
+	jmp jmp_hell_700_label_176
+jmp_hell_700_label_526:
+	jmp jmp_hell_700_label_175
+jmp_hell_700_label_527:
+	jmp jmp_hell_700_label_174
+jmp_hell_700_label_528:
+	jmp jmp_hell_700_label_173
+jmp_hell_700_label_529:
+	jmp jmp_hell_700_label_172
+jmp_hell_700_label_530:
+	jmp jmp_hell_700_label_171
+jmp_hell_700_label_531:
+	jmp jmp_hell_700_label_170
+jmp_hell_700_label_532:
+	jmp jmp_hell_700_label_169
+jmp_hell_700_label_533:
+	jmp jmp_hell_700_label_168
+jmp_hell_700_label_534:
+	jmp jmp_hell_700_label_167
+jmp_hell_700_label_535:
+	jmp jmp_hell_700_label_166
+jmp_hell_700_label_536:
+	jmp jmp_hell_700_label_165
+jmp_hell_700_label_537:
+	jmp jmp_hell_700_label_164
+jmp_hell_700_label_538:
+	jmp jmp_hell_700_label_163
+jmp_hell_700_label_539:
+	jmp jmp_hell_700_label_162
+jmp_hell_700_label_540:
+	jmp jmp_hell_700_label_161
+jmp_hell_700_label_541:
+	jmp jmp_hell_700_label_160
+jmp_hell_700_label_542:
+	jmp jmp_hell_700_label_159
+jmp_hell_700_label_543:
+	jmp jmp_hell_700_label_158
+jmp_hell_700_label_544:
+	jmp jmp_hell_700_label_157
+jmp_hell_700_label_545:
+	jmp jmp_hell_700_label_156
+jmp_hell_700_label_546:
+	jmp jmp_hell_700_label_155
+jmp_hell_700_label_547:
+	jmp jmp_hell_700_label_154
+jmp_hell_700_label_548:
+	jmp jmp_hell_700_label_153
+jmp_hell_700_label_549:
+	jmp jmp_hell_700_label_152
+jmp_hell_700_label_550:
+	jmp jmp_hell_700_label_151
+jmp_hell_700_label_551:
+	jmp jmp_hell_700_label_150
+jmp_hell_700_label_552:
+	jmp jmp_hell_700_label_149
+jmp_hell_700_label_553:
+	jmp jmp_hell_700_label_148
+jmp_hell_700_label_554:
+	jmp jmp_hell_700_label_147
+jmp_hell_700_label_555:
+	jmp jmp_hell_700_label_146
+jmp_hell_700_label_556:
+	jmp jmp_hell_700_label_145
+jmp_hell_700_label_557:
+	jmp jmp_hell_700_label_144
+jmp_hell_700_label_558:
+	jmp jmp_hell_700_label_143
+jmp_hell_700_label_559:
+	jmp jmp_hell_700_label_142
+jmp_hell_700_label_560:
+	jmp jmp_hell_700_label_141
+jmp_hell_700_label_561:
+	jmp jmp_hell_700_label_140
+jmp_hell_700_label_562:
+	jmp jmp_hell_700_label_139
+jmp_hell_700_label_563:
+	jmp jmp_hell_700_label_138
+jmp_hell_700_label_564:
+	jmp jmp_hell_700_label_137
+jmp_hell_700_label_565:
+	jmp jmp_hell_700_label_136
+jmp_hell_700_label_566:
+	jmp jmp_hell_700_label_135
+jmp_hell_700_label_567:
+	jmp jmp_hell_700_label_134
+jmp_hell_700_label_568:
+	jmp jmp_hell_700_label_133
+jmp_hell_700_label_569:
+	jmp jmp_hell_700_label_132
+jmp_hell_700_label_570:
+	jmp jmp_hell_700_label_131
+jmp_hell_700_label_571:
+	jmp jmp_hell_700_label_130
+jmp_hell_700_label_572:
+	jmp jmp_hell_700_label_129
+jmp_hell_700_label_573:
+	jmp jmp_hell_700_label_128
+jmp_hell_700_label_574:
+	jmp jmp_hell_700_label_127
+jmp_hell_700_label_575:
+	jmp jmp_hell_700_label_126
+jmp_hell_700_label_576:
+	jmp jmp_hell_700_label_125
+jmp_hell_700_label_577:
+	jmp jmp_hell_700_label_124
+jmp_hell_700_label_578:
+	jmp jmp_hell_700_label_123
+jmp_hell_700_label_579:
+	jmp jmp_hell_700_label_122
+jmp_hell_700_label_580:
+	jmp jmp_hell_700_label_121
+jmp_hell_700_label_581:
+	jmp jmp_hell_700_label_120
+jmp_hell_700_label_582:
+	jmp jmp_hell_700_label_119
+jmp_hell_700_label_583:
+	jmp jmp_hell_700_label_118
+jmp_hell_700_label_584:
+	jmp jmp_hell_700_label_117
+jmp_hell_700_label_585:
+	jmp jmp_hell_700_label_116
+jmp_hell_700_label_586:
+	jmp jmp_hell_700_label_115
+jmp_hell_700_label_587:
+	jmp jmp_hell_700_label_114
+jmp_hell_700_label_588:
+	jmp jmp_hell_700_label_113
+jmp_hell_700_label_589:
+	jmp jmp_hell_700_label_112
+jmp_hell_700_label_590:
+	jmp jmp_hell_700_label_111
+jmp_hell_700_label_591:
+	jmp jmp_hell_700_label_110
+jmp_hell_700_label_592:
+	jmp jmp_hell_700_label_109
+jmp_hell_700_label_593:
+	jmp jmp_hell_700_label_108
+jmp_hell_700_label_594:
+	jmp jmp_hell_700_label_107
+jmp_hell_700_label_595:
+	jmp jmp_hell_700_label_106
+jmp_hell_700_label_596:
+	jmp jmp_hell_700_label_105
+jmp_hell_700_label_597:
+	jmp jmp_hell_700_label_104
+jmp_hell_700_label_598:
+	jmp jmp_hell_700_label_103
+jmp_hell_700_label_599:
+	jmp jmp_hell_700_label_102
+jmp_hell_700_label_600:
+	jmp jmp_hell_700_label_101
+jmp_hell_700_label_601:
+	jmp jmp_hell_700_label_100
+jmp_hell_700_label_602:
+	jmp jmp_hell_700_label_99
+jmp_hell_700_label_603:
+	jmp jmp_hell_700_label_98
+jmp_hell_700_label_604:
+	jmp jmp_hell_700_label_97
+jmp_hell_700_label_605:
+	jmp jmp_hell_700_label_96
+jmp_hell_700_label_606:
+	jmp jmp_hell_700_label_95
+jmp_hell_700_label_607:
+	jmp jmp_hell_700_label_94
+jmp_hell_700_label_608:
+	jmp jmp_hell_700_label_93
+jmp_hell_700_label_609:
+	jmp jmp_hell_700_label_92
+jmp_hell_700_label_610:
+	jmp jmp_hell_700_label_91
+jmp_hell_700_label_611:
+	jmp jmp_hell_700_label_90
+jmp_hell_700_label_612:
+	jmp jmp_hell_700_label_89
+jmp_hell_700_label_613:
+	jmp jmp_hell_700_label_88
+jmp_hell_700_label_614:
+	jmp jmp_hell_700_label_87
+jmp_hell_700_label_615:
+	jmp jmp_hell_700_label_86
+jmp_hell_700_label_616:
+	jmp jmp_hell_700_label_85
+jmp_hell_700_label_617:
+	jmp jmp_hell_700_label_84
+jmp_hell_700_label_618:
+	jmp jmp_hell_700_label_83
+jmp_hell_700_label_619:
+	jmp jmp_hell_700_label_82
+jmp_hell_700_label_620:
+	jmp jmp_hell_700_label_81
+jmp_hell_700_label_621:
+	jmp jmp_hell_700_label_80
+jmp_hell_700_label_622:
+	jmp jmp_hell_700_label_79
+jmp_hell_700_label_623:
+	jmp jmp_hell_700_label_78
+jmp_hell_700_label_624:
+	jmp jmp_hell_700_label_77
+jmp_hell_700_label_625:
+	jmp jmp_hell_700_label_76
+jmp_hell_700_label_626:
+	jmp jmp_hell_700_label_75
+jmp_hell_700_label_627:
+	jmp jmp_hell_700_label_74
+jmp_hell_700_label_628:
+	jmp jmp_hell_700_label_73
+jmp_hell_700_label_629:
+	jmp jmp_hell_700_label_72
+jmp_hell_700_label_630:
+	jmp jmp_hell_700_label_71
+jmp_hell_700_label_631:
+	jmp jmp_hell_700_label_70
+jmp_hell_700_label_632:
+	jmp jmp_hell_700_label_69
+jmp_hell_700_label_633:
+	jmp jmp_hell_700_label_68
+jmp_hell_700_label_634:
+	jmp jmp_hell_700_label_67
+jmp_hell_700_label_635:
+	jmp jmp_hell_700_label_66
+jmp_hell_700_label_636:
+	jmp jmp_hell_700_label_65
+jmp_hell_700_label_637:
+	jmp jmp_hell_700_label_64
+jmp_hell_700_label_638:
+	jmp jmp_hell_700_label_63
+jmp_hell_700_label_639:
+	jmp jmp_hell_700_label_62
+jmp_hell_700_label_640:
+	jmp jmp_hell_700_label_61
+jmp_hell_700_label_641:
+	jmp jmp_hell_700_label_60
+jmp_hell_700_label_642:
+	jmp jmp_hell_700_label_59
+jmp_hell_700_label_643:
+	jmp jmp_hell_700_label_58
+jmp_hell_700_label_644:
+	jmp jmp_hell_700_label_57
+jmp_hell_700_label_645:
+	jmp jmp_hell_700_label_56
+jmp_hell_700_label_646:
+	jmp jmp_hell_700_label_55
+jmp_hell_700_label_647:
+	jmp jmp_hell_700_label_54
+jmp_hell_700_label_648:
+	jmp jmp_hell_700_label_53
+jmp_hell_700_label_649:
+	jmp jmp_hell_700_label_52
+jmp_hell_700_label_650:
+	jmp jmp_hell_700_label_51
+jmp_hell_700_label_651:
+	jmp jmp_hell_700_label_50
+jmp_hell_700_label_652:
+	jmp jmp_hell_700_label_49
+jmp_hell_700_label_653:
+	jmp jmp_hell_700_label_48
+jmp_hell_700_label_654:
+	jmp jmp_hell_700_label_47
+jmp_hell_700_label_655:
+	jmp jmp_hell_700_label_46
+jmp_hell_700_label_656:
+	jmp jmp_hell_700_label_45
+jmp_hell_700_label_657:
+	jmp jmp_hell_700_label_44
+jmp_hell_700_label_658:
+	jmp jmp_hell_700_label_43
+jmp_hell_700_label_659:
+	jmp jmp_hell_700_label_42
+jmp_hell_700_label_660:
+	jmp jmp_hell_700_label_41
+jmp_hell_700_label_661:
+	jmp jmp_hell_700_label_40
+jmp_hell_700_label_662:
+	jmp jmp_hell_700_label_39
+jmp_hell_700_label_663:
+	jmp jmp_hell_700_label_38
+jmp_hell_700_label_664:
+	jmp jmp_hell_700_label_37
+jmp_hell_700_label_665:
+	jmp jmp_hell_700_label_36
+jmp_hell_700_label_666:
+	jmp jmp_hell_700_label_35
+jmp_hell_700_label_667:
+	jmp jmp_hell_700_label_34
+jmp_hell_700_label_668:
+	jmp jmp_hell_700_label_33
+jmp_hell_700_label_669:
+	jmp jmp_hell_700_label_32
+jmp_hell_700_label_670:
+	jmp jmp_hell_700_label_31
+jmp_hell_700_label_671:
+	jmp jmp_hell_700_label_30
+jmp_hell_700_label_672:
+	jmp jmp_hell_700_label_29
+jmp_hell_700_label_673:
+	jmp jmp_hell_700_label_28
+jmp_hell_700_label_674:
+	jmp jmp_hell_700_label_27
+jmp_hell_700_label_675:
+	jmp jmp_hell_700_label_26
+jmp_hell_700_label_676:
+	jmp jmp_hell_700_label_25
+jmp_hell_700_label_677:
+	jmp jmp_hell_700_label_24
+jmp_hell_700_label_678:
+	jmp jmp_hell_700_label_23
+jmp_hell_700_label_679:
+	jmp jmp_hell_700_label_22
+jmp_hell_700_label_680:
+	jmp jmp_hell_700_label_21
+jmp_hell_700_label_681:
+	jmp jmp_hell_700_label_20
+jmp_hell_700_label_682:
+	jmp jmp_hell_700_label_19
+jmp_hell_700_label_683:
+	jmp jmp_hell_700_label_18
+jmp_hell_700_label_684:
+	jmp jmp_hell_700_label_17
+jmp_hell_700_label_685:
+	jmp jmp_hell_700_label_16
+jmp_hell_700_label_686:
+	jmp jmp_hell_700_label_15
+jmp_hell_700_label_687:
+	jmp jmp_hell_700_label_14
+jmp_hell_700_label_688:
+	jmp jmp_hell_700_label_13
+jmp_hell_700_label_689:
+	jmp jmp_hell_700_label_12
+jmp_hell_700_label_690:
+	jmp jmp_hell_700_label_11
+jmp_hell_700_label_691:
+	jmp jmp_hell_700_label_10
+jmp_hell_700_label_692:
+	jmp jmp_hell_700_label_9
+jmp_hell_700_label_693:
+	jmp jmp_hell_700_label_8
+jmp_hell_700_label_694:
+	jmp jmp_hell_700_label_7
+jmp_hell_700_label_695:
+	jmp jmp_hell_700_label_6
+jmp_hell_700_label_696:
+	jmp jmp_hell_700_label_5
+jmp_hell_700_label_697:
+	jmp jmp_hell_700_label_4
+jmp_hell_700_label_698:
+	jmp jmp_hell_700_label_3
+jmp_hell_700_label_699:
+	jmp jmp_hell_700_label_2
+jmp_hell_700_label_700:
+	jmp jmp_hell_700_label_1
