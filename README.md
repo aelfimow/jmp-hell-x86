@@ -4,4 +4,4 @@
 
 Some extensive usage of `JMP` instruction.
 
-Let the CPU jump forth and back many times and return time stamp counter to measure how many clocks did it take to jump.
+Let the CPU jump forth and back many times (10-, 100-, 1000-times etc.) and return time stamp counter to measure how many clocks did it take to jump.
