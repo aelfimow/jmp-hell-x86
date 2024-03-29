@@ -6,6 +6,13 @@
 
 #include "jmp_func.h"
 
+struct jmp_hell_func
+{
+    uint64_t (* const func)();
+    size_t const jmp_count;
+    size_t min;
+    size_t max;
+};
 
 int main(int, char *[])
 try
