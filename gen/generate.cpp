@@ -8,14 +8,28 @@
 #include "cppasm.h"
 
 static void generate_func(size_t max_labels);
+static void generate_rdtsc();
 
 int main(int argc, char *argv[])
 try
 {
     if (argc != 2)
     {
-        const std::string usageStr { "Usage: generate max_labels" };
-        throw std::invalid_argument(usageStr);
+        std::cout << "Usage: generate max_labels" << std::endl;
+        std::cout << "Usage: generate rdtsc" << std::endl;
+        throw std::invalid_argument("Wrong usage");
+    }
+
+    {
+        std::string const argv_str { argv[1] };
+
+        bool const generate = (argv_str == "rdtsc");
+
+        if (generate)
+        {
+            generate_rdtsc();
+            return EXIT_SUCCESS;
+        }
     }
 
     size_t max_labels = 0U;
@@ -120,4 +134,39 @@ static void generate_func(size_t max_labels)
             JMP(tmpstr);
         }
     }
+}
+
+static void generate_rdtsc()
+{
+    // Function name to be generated
+    const std::string func_name { "rdtsc_func" };
+    comment("uint64_t " + func_name + "(void)");
+
+    global(func_name);
+
+    section code { ".text" };
+    code.start();
+
+    label(func_name);
+
+    // Synchronize the execution pipeline calling CPUID
+    {
+        r64 &reg_to_save { RBX };
+
+        PUSH(reg_to_save);
+        XOR(RAX, RAX);
+        CPUID();
+        POP(reg_to_save);
+    }
+
+    // Get time stamp counter
+    RDTSC();
+
+    imm8 bits_to_shift { 32 };
+    bits_to_shift.dec();        // generate it as a decimal value
+    SHL(RDX, bits_to_shift);
+
+    OR(RAX, RDX);
+
+    RET();
 }
