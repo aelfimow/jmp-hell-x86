@@ -3,6 +3,7 @@
 #include <valarray>
 #include <functional>
 #include <stdexcept>
+#include <sstream>
 
 #include "jmp_func.h"
 #include "rdtsc_func.h"
@@ -15,9 +16,21 @@ struct jmp_hell_func
     size_t max;
 };
 
-int main(int, char *[])
+int main(int argc, char *argv[])
 try
 {
+    if (argc != 2)
+    {
+        std::cout << "Usage: jmp_hell max_steps" << std::endl;
+        throw std::invalid_argument("Wrong usage");
+    }
+
+    size_t max_steps = 0U;
+    {
+        std::stringstream ss { argv[1] };
+        ss >> max_steps;
+    }
+
     std::vector<jmp_hell_func> all_functions
     {
         { jmp_hell_10, 10U, 0U, 0U },
@@ -73,7 +86,7 @@ try
         }
     }
 
-    for (size_t step = 0U; step < 1000U; ++step)
+    for (size_t step = 0U; step < max_steps; ++step)
     {
         for (auto &function: all_functions)
         {
