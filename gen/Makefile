@@ -10,6 +10,8 @@ ASFLAGS64  = --64
 CPPASM_INC = ../../cppasm/src
 CPPASM_OBJ = ../../cppasm/src/obj/*.o
 
+ASM_FILE_RDTSC = ../src/rdtsc_func.S
+
 ASM_FILE_10 = ../src/jmp_func_10.S
 ASM_FILE_20 = ../src/jmp_func_20.S
 ASM_FILE_30 = ../src/jmp_func_30.S
@@ -67,6 +69,7 @@ link:
 	$(CXX) generate.o $(CPPASM_OBJ) -o generate.exe $(CXXFLAGS)
 
 generate:
+	./generate.exe rdtsc > $(ASM_FILE_RDTSC)
 	./generate.exe 10 > $(ASM_FILE_10)
 	./generate.exe 20 > $(ASM_FILE_20)
 	./generate.exe 30 > $(ASM_FILE_30)
@@ -106,6 +109,7 @@ generate:
 	./generate.exe 100000 > $(ASM_FILE_100000)
 
 check:
+	$(AS) $(ASM_FILE_RDTSC) $(ASFLAGS64) -o rdtsc_func.o
 	$(AS) $(ASM_FILE_10) $(ASFLAGS64) -o jmp_func_10.o
 	$(AS) $(ASM_FILE_20) $(ASFLAGS64) -o jmp_func_20.o
 	$(AS) $(ASM_FILE_30) $(ASFLAGS64) -o jmp_func_30.o
