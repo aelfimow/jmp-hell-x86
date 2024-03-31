@@ -48,7 +48,9 @@ ASM_FILE_OBJ += jmp_func_70000.o
 ASM_FILE_OBJ += jmp_func_80000.o
 ASM_FILE_OBJ += jmp_func_90000.o
 
-ASM_FILE_OBJ += jmp_func_100000.S
+ASM_FILE_OBJ += jmp_func_100000.o
+
+ASM_FILE_OBJ += rdtsc_func.o
 
 
 .PHONY: compile
@@ -95,6 +97,7 @@ compile:
 	$(AS) jmp_func_80000.S $(ASFLAGS64) -o jmp_func_80000.o
 	$(AS) jmp_func_90000.S $(ASFLAGS64) -o jmp_func_90000.o
 	$(AS) jmp_func_100000.S $(ASFLAGS64) -o jmp_func_100000.o
+	$(AS) rdtsc_func.S $(ASFLAGS64) -o rdtsc_func.o
 
 link:
 	$(CXX) main.o $(ASM_FILE_OBJ) -o jmp_hell.exe ${CXXFLAGS}
