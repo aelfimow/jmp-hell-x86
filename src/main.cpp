@@ -5,6 +5,7 @@
 #include <stdexcept>
 
 #include "jmp_func.h"
+#include "rdtsc_func.h"
 
 struct jmp_hell_func
 {
@@ -60,27 +61,23 @@ try
 
     // First run to initialize min and max
     {
-        uint64_t T0 = jmp_hell_10();
-
         for (auto &function: all_functions)
         {
+            uint64_t const T0 = rdtsc_func();
             uint64_t const T1 = function.func();
 
             uint64_t const diff = (T1 - T0);
 
             function.min = diff;
             function.max = diff;
-
-            T0 = T1;
         }
     }
 
     for (size_t step = 0U; step < 1000U; ++step)
     {
-        uint64_t T0 = jmp_hell_10();
-
         for (auto &function: all_functions)
         {
+            uint64_t const T0 = rdtsc_func();
             uint64_t const T1 = function.func();
 
             uint64_t const diff = (T1 - T0);
@@ -94,8 +91,6 @@ try
             {
                 function.max = diff;
             }
-
-            T0 = T1;
         }
     }
 
